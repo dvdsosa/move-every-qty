@@ -10,7 +10,7 @@ Objetivo
 
 Funcionamiento resumido
 - La aplicación revisa la carpeta origen cada `intervalo` segundos.
-- Si encuentra imágenes nuevas y el número a mover no supera `Máx imgs a mover` (considerando `Margen Seguro`), las mueve al destino.
+- Si encuentra imágenes nuevas y el número a mover no supera `Imágenes a mover` (considerando `Margen Seguro`), las mueve al destino.
 - Los eventos (inicio, errores, archivos movidos) se muestran en la consola de registro.
 
 Configuración y uso
@@ -18,7 +18,7 @@ Configuración y uso
   - **Carpeta Origen**: carpeta donde la cámara deja las fotos.
   - **Carpeta Destino**: carpeta a donde se moverán las fotos.
   - **Intervalo (s)**: frecuencia de comprobación en segundos.
-  - **Máx imgs a mover**: límite por ciclo de ejecución.
+  - **Imágenes a mover**: límite por ciclo de ejecución.
   - **Margen Seguro**: número de archivos que se deben mantener en origen por seguridad.
 - Pulsa el botón verde **Iniciar Monitoreo** para comenzar.
 
@@ -27,8 +27,9 @@ Imagen de la aplicación
 
 ![Captura de la aplicación](img/app-screenshot.png)
 
-Archivos importantes
+Archivos del repositorio:
 - [move_files.py](move_files.py) : script principal con la lógica de monitorización y movimiento de archivos.
+- [move_files.exe](dist/move_files.exe): archivo ejecutable para Windows.
 
 Compilar para Windows (PyInstaller):
 ```bash
