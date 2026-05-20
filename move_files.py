@@ -49,12 +49,12 @@ class MoveFilesApp:
         
         # CHECK_INTERVAL
         tk.Label(config_frame, text="Intervalo (s):").grid(row=2, column=0, sticky=tk.W, pady=2)
-        self.interval_var = tk.IntVar(value=60)
+        self.interval_var = tk.IntVar(value=900)
         tk.Entry(config_frame, textvariable=self.interval_var, width=15).grid(row=2, column=1, sticky=tk.W, padx=5, pady=2)
         
         # MAX_IMAGES_PER_FOLDER
-        tk.Label(config_frame, text="Máx imgs a mover:").grid(row=3, column=0, sticky=tk.W, pady=2)
-        self.max_imgs_var = tk.IntVar(value=250)
+        tk.Label(config_frame, text="Imágenes a mover:").grid(row=3, column=0, sticky=tk.W, pady=2)
+        self.max_imgs_var = tk.IntVar(value=10000)
         tk.Entry(config_frame, textvariable=self.max_imgs_var, width=15).grid(row=3, column=1, sticky=tk.W, padx=5, pady=2)
         
         # SAFE_MARGIN
